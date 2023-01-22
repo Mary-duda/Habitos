@@ -106,14 +106,14 @@ form {
   @media (max-width: 578px) {
     /* de 0 ate 578 vai ocorrer alguma mudança*/
     button{
-        padding: 8px 8px; /*em cima é baixo com 16 e dos lados 24*/
+        padding: 5px 5px; /*em cima é baixo com 16 e dos lados 24*/
       border-radius: 8px;
       border: 1px solid #684C36;
       background-color: transparent;
       color: white;
       font-family: "Inter", sans-serif;
       font-weight: 600;
-      font-size: 13px;
+      font-size: 10px;
       line-height: 125%;
     
       display: flex; /*é a disposição dos elemento dentro de um elemento */
