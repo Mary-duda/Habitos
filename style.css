@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+body{
+    background-color:  #4baecf;
+    height: 100vh;
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-evenly;
+    width: 100%;
+    background-image: url("img/biblioteca.jpg");
+    padding: 48px;
+    
+}
+header h1{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
+
+button{
+    padding: 16px 24px; /*em cima é baixo com 16 e dos lados 24*/
+  border-radius: 8px;
+  border: 1px solid #684C36;
+  background-color: transparent;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+
+  display: flex; /*é a disposição dos elemento dentro de um elemento */
+  align-items: center;
+ 
+}
+button:hover{
+    background-color: #684C36;
+}
+
+form {
+    display: flex;
+    padding: 190px 48px 48px; /*primeira parte e a de cima a seguda e das laterais e a ultima e para baixo */
+    width: fit-content; /*esta encaixado o conteudo na largura*/
+  }
+  .habits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 58px;
+  }
+  .habit {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    align-items: center; /*---*/
+    justify-content: center; /*|*/
+  }
+  .days {
+    display: flex;
+    margin-left: 32px;
+    gap: 48px;
+  }
+  .day {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  .day div {
+    margin-bottom: 8px;
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    line-height: 125%;
+    color: black;
+    text-align: center;
+  }
+  
+  input {
+    appearance: none; /*Tira a aparecia*/
+    -webkit-appearance: none; /*E o prefixo e usando para alguns navegadores entederem*/
+    width: 64px;
+    height: 64px;
+    border: solid 2px #27272a;
+    background-color: #18181b;
+  }
+  /*pseundo-selector*/
+  input:checked {
+    /*Quando estiver marcado*/
+    border: #33251a;
+    background-color:#684C36;
+  }
+  /* Uma regra css*/
+  @media (max-width: 578px) {
+    /* de 0 ate 578 vai ocorrer alguma mudança*/
+    button{
+        padding: 8px 8px; /*em cima é baixo com 16 e dos lados 24*/
+      border-radius: 8px;
+      border: 1px solid #684C36;
+      background-color: transparent;
+      color: white;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 125%;
+    
+      display: flex; /*é a disposição dos elemento dentro de um elemento */
+      align-items: center;
+     
+    }
+    
+  }
+  
+
